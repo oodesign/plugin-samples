@@ -8,7 +8,7 @@ class App extends React.Component {
   textbox: HTMLInputElement
 
   countRef = (element: HTMLInputElement) => {
-    if (element) element.value = '5'
+    if (element) element.value = '4'
     this.textbox = element
   }
 
