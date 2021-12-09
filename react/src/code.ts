@@ -8,8 +8,8 @@ figma.ui.onmessage = (msg) => {
 
     for (let i = 0; i < msg.count; i++) {
       const rect = figma.createRectangle();
-      rect.x = i * 150;
-      rect.fills = [{ type: "SOLID", color: { r: 1, g: 0.5, b: 0 } }];
+      rect.x = i * 450;
+      rect.fills = [{ type: "SOLID", color: { r: 1, g: 1, b: 0 } }];
       figma.currentPage.appendChild(rect);
       nodes.push(rect);
     }
@@ -18,5 +18,5 @@ figma.ui.onmessage = (msg) => {
     figma.viewport.scrollAndZoomIntoView(nodes);
   }
 
-  figma.closePlugin();
+  //figma.closePlugin();
 };
